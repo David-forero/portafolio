@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#111425, #3751e0);
+  overflow: hidden;
+}
+
+.moon {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* .moon::after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(#111425, #3751e0);
+  background-attachment: fixed;
+} */
+
+.forest {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transform: scale(1.2);
+}
+
+.scene i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.card-experience {
+  width: 500px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .card-experience {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .section-skills {
+    height: 160vh !important;
+  }
+}
+
+/* SLIDER */
+
+.mySwiper {
+  margin-top: 12% !important;
+  padding: 20px !important;
+  width: 100%;
+}
+
+.swiper-slide {
+  background: #fff;
+  width: 300px;
+  height: 100% !important;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+/* projects */
+
+.img-project {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.list-skill-project {
+  margin-bottom: 30px;
+}
+.btn-demo {
+  margin: 10px 0px;
+}
+
+/* footer */
+
+.bg-footer {
+  background-position-y: -170px;
+  background-size: cover
+}
+
+@media screen and (max-width: 768px) {
+  .bg-footer {
+    background-position-y: 12px;
+  }
+}
+
+/* spinner */
+.spinner-5 {
+  width: 50px;
+  --b: 8px; /* the border thickness */
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #fafafa;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg,#000 1deg 70deg,#0000 71deg 90deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: s5 1s infinite;
+}
+@keyframes s5 {to{transform: rotate(.5turn)}}
+
+.no-bg{
+  background: none !important;
+  position: relative !important;
+  z-index: 50;
+}
