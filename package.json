@@ -1,7 +1,7 @@
 {
   "name": "porfolio",
   "private": true,
-  "homepage": "http://David-forero.github.io/portafolio",
+  "homepage": "http://David-forero.github.io/portafolio/portafolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
