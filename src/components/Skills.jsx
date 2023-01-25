@@ -94,7 +94,7 @@ const Skills = ({ skills, pageInfo, socials }) => {
                       </span>
                     </h3>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 shadow-lg">
+                  <div className="w-full bg-gray-200 rounded-full h-2.5 shadow-lg">
                     <div
                       className="bg-sky-700 h-2.5 rounded-full"
                       style={{ width: skill.progress + "%" }}
