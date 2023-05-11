@@ -15,7 +15,7 @@ const Hero = ({ loading }) => {
         {loading ? (
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-white font-thin text-5xl">
-              Mi portafolio esta cargando, espere un momento...
+              Mi portafolio está cargando, espere un momento...
             </h1>
             <div class="spinner-5 mt-5"></div>
           </div>
